@@ -38,6 +38,7 @@ class HomeState extends State<Home> {
       h1(classes: "text-blue-600", [.text('Welcome')]),
       p([.text('You successfully create a new Jaspr site.')]),
       div(styles: Styles(height: 100.px), []),
+      div(classes: 'bg-red-600 mt-4 pt-0', [.text('This is a simple counter:')]),
       const Counter(),
     ]);
   }
