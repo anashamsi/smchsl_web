@@ -1,0 +1,14 @@
+{
+  "tailwindCSS.includeLanguages": {
+    "dart": "html"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["class:\\s*'([^']*)'", 1],
+    ["class:\\s*\"([^\"]*)\"", 1],
+    ["classes:\\s*'([^']*)'", 1],
+    ["classes:\\s*\"([^\"]*)\"", 1]
+  ]
+}
