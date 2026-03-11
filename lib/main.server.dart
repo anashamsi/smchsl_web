@@ -27,6 +27,7 @@ void main() {
   runApp(
     Document(
       title: 'smchsl_web',
+      base: '/smchsl_web/',
       styles: [
         // Special import rule to include to another css file.
         css.import('https://fonts.googleapis.com/css?family=Roboto'),
