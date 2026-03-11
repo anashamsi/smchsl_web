@@ -1,1 +1,18 @@
 @import "tailwindcss";  
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+#about-section {
+  scroll-margin-top: 100px; 
+}
+/* Custom utility to hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

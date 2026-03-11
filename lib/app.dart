@@ -1,6 +1,8 @@
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 import 'package:jaspr_router/jaspr_router.dart';
+import 'package:smchsl_web/pages/management.dart';
+import 'components/footer.dart'; 
 
 import 'components/header.dart';
 import 'pages/about.dart';
@@ -14,40 +16,30 @@ class App extends StatelessComponent {
   const App({super.key});
 
   @override
-  Component build(BuildContext context) {
-    // This method is rerun every time the component is rebuilt.
+Component build(BuildContext context) {
+  return div(classes: 'min-h-screen flex flex-col bg-white', [ // min-h-screen footer ko niche rakhega
+    const Header(),
     
-    // Renders a <div class="main"> html element with children.
-    return div(classes: 'main', [
-      const Header(),
-      Router(routes: [
-        Route(path: '/', title: 'Home', builder: (context, state) => const Home()),
-        Route(path: '/about', title: 'About', builder: (context, state) => const About()),
-      ]),
-    ]);
-  }
-
-  // Defines the css styles for elements of this component.
-  //
-  // By using the @css annotation, these will be rendered automatically to css inside the <head> of your page.
-  // Must be a variable or getter of type [List<StyleRule>].
-  @css
-  static List<StyleRule> get styles => [
-    css('.main', [
-      // The '&' refers to the parent selector of a nested style rules.
-      css('&').styles(
-        display: .flex,
-        height: 100.vh,
-        flexDirection: .column,
-        flexWrap: .wrap,
-      ),
-      css('section').styles(
-        display: .flex,
-        flexDirection: .column,
-        justifyContent: .center,
-        alignItems: .center,
-        flex: Flex(grow: 1),
+    // Main Content Area
+    main_(classes: 'flex-1', [ // flex-1 content ko expand karega
+      Router(
+        routes: [
+          Route(path: '/', title: 'Home', builder: (context, state) => const Home()),
+          Route(path: '/management', title: 'Management', builder: (context, state) => const Management()),
+        ],
       ),
     ]),
+    
+     Footer(),
+  ]);
+}
+
+  @css
+  static List<StyleRule> get styles => [
+    css('.main').styles(
+      display: .flex,
+      flexDirection: .column,
+      minHeight: 100.vh, // Sirf ye rakhein
+    ),
   ];
 }

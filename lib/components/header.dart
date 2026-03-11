@@ -15,10 +15,11 @@ class _HeaderState extends State<Header> {
 
   final routes = [
     ('Home', '/'),
-    ('About Us', '/about'),
+    ('About Us', '/#about-section'),
     ('Management', '/management'),
-    ('Features', '/features'),
-    ('Amenities', '/amenities'),
+    ('Features', '/#features-section'),
+    ('Gallery', '/#gallery-section'),
+    ('Amenities', '/#amenities-section'),
     ('Contact', '/contact'),
   ];
 
@@ -32,16 +33,30 @@ class _HeaderState extends State<Header> {
         classes: 'w-full bg-white shadow fixed top-0 left-0 z-50',
         [
           div(
-            classes: 'relative max-w-7xl mx-auto flex items-center justify-between px-5 py-4',
+            classes: 'relative max-w-7xl mx-auto flex items-center justify-between px-5 py-5 min-h-[80px]',
 
             [
               /// LEFT SECTION (Hamburger + Desktop Logo)
               div(
                 classes: 'flex items-center gap-4',
                 [
+                  /// MOBILE LOGO (center)
+                  div(
+                    classes: 'absolute left-5 top-1/2 transform -translate-y-1/2 md:hidden',
+                    [
+                      Link(
+                        to: '/',
+                        child: img(
+                          src: 'images/logo.svg',
+                          classes: 'w-15',
+                        ),
+                      ),
+                    ],
+                  ),
+
                   /// HAMBURGER (mobile)
                   button(
-                    classes: 'md:hidden text-3xl cursor-pointer',
+                    classes: 'absolute right-5 top-1/2 transform -translate-y-1/2 md:hidden text-3xl cursor-pointer',
                     events: {
                       'click': (e) {
                         setState(() {
@@ -58,20 +73,6 @@ class _HeaderState extends State<Header> {
                     child: img(
                       src: 'images/logo2.svg',
                       classes: 'hidden md:block w-50 h-15',
-                    ),
-                  ),
-                ],
-              ),
-
-              /// MOBILE LOGO (center)
-              div(
-                classes: 'absolute right-5 top-1/2 transform -translate-y-1/2 md:hidden',
-                [
-                  Link(
-                    to: '/',
-                    child: img(
-                      src: 'images/logo.svg',
-                      classes: 'w-15',
                     ),
                   ),
                 ],
@@ -121,8 +122,7 @@ class _HeaderState extends State<Header> {
       /// SIDE MENU (mobile)
       div(
         classes:
-            'fixed top-0 left-0 h-full w-72 bg-white shadow-lg z-50 transform ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300',
-
+            'fixed top-0 left-0 w-full bg-white shadow-lg z-50 transform ${isMenuOpen ? "translate-y-0" : "-translate-y-full"} transition-transform duration-300',
         [
           /// MENU HEADER
           div(

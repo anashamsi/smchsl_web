@@ -7,8 +7,8 @@
 import 'package:jaspr/client.dart';
 
 import 'package:smchsl_web/components/header.dart' deferred as _header;
-import 'package:smchsl_web/pages/about.dart' deferred as _about;
 import 'package:smchsl_web/pages/home.dart' deferred as _home;
+import 'package:smchsl_web/pages/management.dart' deferred as _management;
 
 /// Default [ClientOptions] for use with your Jaspr project.
 ///
@@ -32,7 +32,10 @@ ClientOptions get defaultClientOptions => ClientOptions(
       (p) => _header.Header(),
       loader: _header.loadLibrary,
     ),
-    'about': ClientLoader((p) => _about.About(), loader: _about.loadLibrary),
     'home': ClientLoader((p) => _home.Home(), loader: _home.loadLibrary),
+    'management': ClientLoader(
+      (p) => _management.Management(),
+      loader: _management.loadLibrary,
+    ),
   },
 );

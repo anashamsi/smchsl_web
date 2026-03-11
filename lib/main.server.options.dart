@@ -6,8 +6,8 @@
 
 import 'package:jaspr/server.dart';
 import 'package:smchsl_web/components/header.dart' as _header;
-import 'package:smchsl_web/pages/about.dart' as _about;
 import 'package:smchsl_web/pages/home.dart' as _home;
+import 'package:smchsl_web/pages/management.dart' as _management;
 import 'package:smchsl_web/app.dart' as _app;
 
 /// Default [ServerOptions] for use with your Jaspr project.
@@ -30,8 +30,8 @@ ServerOptions get defaultServerOptions => ServerOptions(
   clientId: 'main.client.dart.js',
   clients: {
     _header.Header: ClientTarget<_header.Header>('header'),
-    _about.About: ClientTarget<_about.About>('about'),
     _home.Home: ClientTarget<_home.Home>('home'),
+    _management.Management: ClientTarget<_management.Management>('management'),
   },
-  styles: () => [..._about.About.styles, ..._app.App.styles],
+  styles: () => [..._app.App.styles],
 );
