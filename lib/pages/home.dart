@@ -48,8 +48,8 @@ class HomeState extends State<Home> {
           ]),
           div(classes: 'flex gap-4', [
             a(
-              href: "#",
-              classes: 'bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-all',
+              href: "https://play.google.com/store/apps/details?id=com.hannanashraf12345.smchslappmobile",
+              classes: 'bg-[#F6921C] hover:bg-[#262261] text-white font-semibold py-3 px-8 rounded-lg transition-all',
               [Component.text("Download our Mobile App")],
             ),
           ]),

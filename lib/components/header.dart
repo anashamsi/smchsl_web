@@ -80,7 +80,7 @@ class _HeaderState extends State<Header> {
 
               /// DESKTOP MENU
               nav(
-                classes: 'hidden md:flex gap-6 font-medium text-gray-700',
+                classes: 'hidden md:flex gap-6 font-medium text-black',
                 [
                   for (var route in routes)
                     Link(
@@ -96,10 +96,10 @@ class _HeaderState extends State<Header> {
               /// CONTACT BUTTON (desktop only)
               // --- CONTACT BUTTON (desktop only) ---
               a(
-                href: '#footer-section', // Footer ke liye anchor
+                href: "#footer-section",
                 classes:
-                    'hidden md:flex flex-shrink-0 bg-[#F7941E] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#262262] transition whitespace-nowrap',
-                [text('Contact us')],
+                    'bg-[#262261] hover:bg-[#F6921C] text-white  py-2 px-6 rounded-lg transition-all hidden md:block',
+                [Component.text("Contact us")],
               ),
             ],
           ),

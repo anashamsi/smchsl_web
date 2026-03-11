@@ -17,14 +17,14 @@ class Features extends StatelessComponent {
         div(classes: 'grid grid-cols-1 md:grid-cols-3 gap-8', [
           // CARD 1: Accessibility
           _featureCard(
-            icon: 'images/icon-accessibility.svg', // Apne icons ka path dein
+            icon: 'images/accessibility.svg', // Apne icons ka path dein
             title: 'Accessibility',
             description: 'Shamsi Mercantile Co-operative Housing Society Gadap Town, District Jamshoro.',
           ),
 
           // CARD 2: Security
           _featureCard(
-            icon: 'images/icon-security.svg',
+            icon: 'images/security.svg',
             title: 'Security',
             description:
                 'The society plans to ensure proper security arrangements through trained security personnel, as the safety of future residents will remain a top priority.',
@@ -32,7 +32,7 @@ class Features extends StatelessComponent {
 
           // CARD 3: Facilities
           _featureCard(
-            icon: 'images/icon-facilities.svg',
+            icon: 'images/facility.svg',
             title: 'Facilities',
             description:
                 'The society plans to develop parks and recreational areas where elders and children will be able to enjoy their leisure time in a pleasant environment.',
@@ -49,7 +49,7 @@ class Features extends StatelessComponent {
           'bg-white p-8 rounded-2xl border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.05)] flex flex-col items-start text-left',
       [
         // ICON BOX
-        div(classes: 'bg-[#006837] p-4 rounded-xl mb-6', [
+        div(classes: 'bg-[#F6921C] p-4 rounded-xl mb-6', [
           img(src: icon, classes: 'w-8 h-8 invert', alt: title), // invert agar icon black hai to white karne ke liye
         ]),
 

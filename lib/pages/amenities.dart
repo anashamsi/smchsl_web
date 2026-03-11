@@ -8,7 +8,7 @@ class Amenities extends StatelessComponent {
   Component build(BuildContext context) {
     return section(id: 'amenities-section', classes: 'w-full bg-[#f8fafc] py-16 scroll-mt-20', [
       div(classes: 'max-w-7xl mx-auto px-6', [
-        h2(classes: 'text-4xl font-bold text-[#1a2b4b] text-center mb-12', [
+        h2(classes: 'text-4xl font-bold text-[#262261] text-center mb-12', [
           text("Amenities"),
         ]),
 
@@ -19,7 +19,7 @@ class Amenities extends StatelessComponent {
               'onclick': "document.getElementById('scroll-container').scrollBy({left: -380, behavior: 'smooth'})",
             },
             classes:
-                'absolute left-[-10px] md:left-[-20px] top-1/2 -translate-y-1/2 z-30 bg-[#4CAF50] hover:bg-[#45a049] text-white p-3 rounded-full shadow-xl transition-all cursor-pointer hidden md:block',
+                'absolute left-[-10px] md:left-[-20px] top-1/2 -translate-y-1/2 z-30 bg-[#F6921C] hover:bg-[#262261] text-white p-3 rounded-full shadow-xl transition-all cursor-pointer hidden md:block',
             [text("<")],
           ),
 
@@ -47,13 +47,13 @@ class Amenities extends StatelessComponent {
                     'A healthcare facility is planned to provide basic medical services and emergency care for future residents.',
               ),
               _amenityCard(
-                image: 'images/sports.png',
+                image: 'images/sportscomplex.png',
                 title: 'Sports Complex',
                 desc:
                     'The society intends to develop a sports complex for recreational and fitness activities for all age groups.',
               ),
               _amenityCard(
-                image: 'images/park.png',
+                image: 'images/parks.png',
                 title: 'Parks & Playgrounds',
                 desc:
                     'Parks and playgrounds are planned to offer outdoor leisure and play areas for children, elders, and families alike.',
@@ -67,7 +67,7 @@ class Amenities extends StatelessComponent {
               'onclick': "document.getElementById('scroll-container').scrollBy({left: 380, behavior: 'smooth'})",
             },
             classes:
-                'absolute right-[-10px] md:right-[-20px] top-1/2 -translate-y-1/2 z-30 bg-[#4CAF50] hover:bg-[#45a049] text-white p-3 rounded-full shadow-xl transition-all cursor-pointer hidden md:block',
+                'absolute right-[-10px] md:right-[-20px] top-1/2 -translate-y-1/2 z-30 bg-[#F6921C] hover:bg-[#262261] text-white p-3 rounded-full shadow-xl transition-all cursor-pointer hidden md:block',
             [text(">")],
           ),
         ]),
@@ -84,7 +84,7 @@ class Amenities extends StatelessComponent {
           img(src: image, classes: 'w-full h-full object-cover', alt: title),
         ]),
         div(classes: 'p-6', [
-          h3(classes: 'text-xl font-bold text-gray-800 mb-3', [text(title)]),
+          h3(classes: 'text-xl font-bold text-[#262261] mb-3', [text(title)]),
           p(classes: 'text-gray-500 text-sm leading-relaxed', [text(desc)]),
         ]),
       ],

@@ -12,9 +12,9 @@ class About extends StatelessComponent {
         div(classes: 'flex flex-col lg:flex-row gap-12 items-center mb-20', [
           // TEXT
           div(classes: 'w-full lg:w-1/2', [
-            h2(classes: 'text-2xl md:text-3xl font-extrabold text-[#262262] mb-8 relative', [
+            h2(classes: 'text-2xl md:text-3xl font-extrabold text-[#262261] mb-8 relative', [
               text("Brief History"),
-              span(classes: 'absolute -bottom-2 left-0 w-20 h-1 bg-[#1E73BE]', []),
+              span(classes: 'absolute -bottom-2 left-0 w-20 h-1 bg-[#F6921C]', []),
             ]),
             p(classes: ' text-gray-600 leading-snug text-base text-justify mb-6', [
               text(
@@ -42,7 +42,7 @@ class About extends StatelessComponent {
 
         // --- RESIDENTIAL PLOTS SECTION ---
         div(classes: 'mb-12', [
-          div(classes: 'flex items-center justify-between mb-8 border-l-8 border-[#1E73BE] pl-6', [
+          div(classes: 'flex items-center justify-between mb-8 border-l-8 border-[#F6921C] pl-6', [
             div([
               h3(classes: 'text-2xl font-bold text-[#262262]', [text("Residential Plots")]),
               p(classes: 'text-gray-500', [text("Planned housing units for a modern lifestyle")]),
@@ -60,7 +60,7 @@ class About extends StatelessComponent {
 
         // --- COMMERCIAL PLOTS SECTION ---
         div(classes: 'mb-8', [
-          div(classes: 'flex items-center justify-between mb-8 border-l-8 border-[#262262] pl-6', [
+          div(classes: 'flex items-center justify-between mb-8 border-l-8 border-[#262261] pl-6', [
             div([
               h3(classes: 'text-2xl font-bold text-[#262262]', [text("Commercial Plots")]),
               p(classes: 'text-gray-500', [text("Prime locations for business growth")]),

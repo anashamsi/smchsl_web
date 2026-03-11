@@ -10,7 +10,7 @@ class Gallery extends StatelessComponent {
       div(classes: 'max-w-7xl mx-auto px-6', [
         // --- SECTION HEADER ---
         div(classes: 'text-center mb-12', [
-          h2(classes: 'text-4xl font-bold text-[#1a2b4b] mb-4', [text("Society Updates")]),
+          h2(classes: 'text-4xl font-bold text-[#262261] mb-4', [text("Society Updates")]),
           p(classes: 'text-gray-500 max-w-xl mx-auto', [
             text("Explore official society documents, registrations, trademarks, and latest alerts for members."),
           ]),
