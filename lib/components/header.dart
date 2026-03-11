@@ -20,7 +20,7 @@ class _HeaderState extends State<Header> {
     ('Features', '/#features-section'),
     ('Gallery', '/#gallery-section'),
     ('Amenities', '/#amenities-section'),
-    ('Contact', '/contact'),
+    ('Contact', '/#footer-section'),
   ];
 
   @override
@@ -94,8 +94,9 @@ class _HeaderState extends State<Header> {
               ),
 
               /// CONTACT BUTTON (desktop only)
+              // --- CONTACT BUTTON (desktop only) ---
               a(
-                href: '#',
+                href: '#footer-section', // Footer ke liye anchor
                 classes:
                     'hidden md:flex flex-shrink-0 bg-[#F7941E] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#262262] transition whitespace-nowrap',
                 [text('Contact us')],

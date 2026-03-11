@@ -6,21 +6,22 @@ class Footer extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return footer(classes: 'w-full bg-white pt-16 pb-8 border-t border-gray-100', [
+    return footer(id: 'footer-section', classes: 'w-full bg-white pt-16 pb-8 border-t border-gray-100', [
       div(classes: 'max-w-7xl mx-auto px-6', [
         // TOP SECTION: 3 Columns
         div(classes: 'grid grid-cols-1 md:grid-cols-3 gap-12 mb-16', [
-          
           // COLUMN 1: Brand & Links
           div([
-            h2(classes: 'text-2xl font-bold text-[#006837] mb-6', [text("PIA-ECHS")]),
+            h2(classes: 'text-2xl font-bold text-[#006837] mb-6', [text("SMCHSL")]),
             p(classes: 'text-gray-500 mb-6 leading-relaxed', [
-              text("Join us at PIAECHS and discover comfort, connection, and a brighter future together. Welcome home!"),
+              text(
+                "Become a part of Shamsi Mercantile Co-operative Housing Society and experience organized living, community harmony, and a promising future.",
+              ),
             ]),
             h3(classes: 'text-lg font-bold text-[#1a2b4b] mb-4', [text("Important Links")]),
             ul(classes: 'space-y-2', [
-              _footerLink("Refund Policy", "/refund"),
-              _footerLink("Water Bill Rates", "/rates"),
+              _footerLink("Management", "/management"),
+              _footerLink("Features", "/#features-section"),
             ]),
           ]),
 
@@ -28,10 +29,14 @@ class Footer extends StatelessComponent {
           div([
             h3(classes: 'text-lg font-bold text-[#1a2b4b] mb-6', [text("Contact Us")]),
             div(classes: 'space-y-4', [
-              _contactItem('images/icon-email.svg', 'info@piaechs.com'),
-              _contactItem('images/icon-location.svg', 'Office Address 33-C, Water Tank No.01, PIA Employees Cooperative Housing Society Limited Near WAPDA Town Goal Chaker, Lahore.'),
-              _contactItem('images/icon-phone.svg', '042-35181198'),
-              _contactItem('images/icon-phone.svg', '042-35185304'),
+              _contactItem('images/icon-email.svg', 'shamsimercantilechsl@gmail.com'),
+              _contactItem(
+                'images/icon-location.svg',
+                'Office # 02, Ruby Heights, Jamal ud Din Afghani Road, Sharfabad, Karachi, Pakistan.',
+              ),
+              _contactItem('images/icon-phone.svg', '+92 333 1351353'),
+              _contactItem('images/icon-phone.svg', '021-34917503'),
+              _contactItem('images/icon-phone.svg', '021-34537503'),
             ]),
           ]),
 
@@ -39,9 +44,11 @@ class Footer extends StatelessComponent {
           div([
             h3(classes: 'text-lg font-bold text-[#1a2b4b] mb-6', [text("Connect With Us")]),
             div(classes: 'flex gap-4', [
-              _socialIcon('images/icon-fb.svg', 'https://facebook.com'),
+              _socialIcon(
+                'images/icon-fb.svg',
+                'https://www.facebook.com/ShamsiMercantileCooperativeHousingSocietyLtd/',
+              ),
               _socialIcon('images/icon-twitter.svg', 'https://twitter.com'),
-              _socialIcon('images/icon-youtube.svg', 'https://youtube.com'),
             ]),
           ]),
         ]),
@@ -49,7 +56,7 @@ class Footer extends StatelessComponent {
         // BOTTOM SECTION: Copyright
         div(classes: 'pt-8 border-t border-gray-100 text-center', [
           p(classes: 'text-gray-400 text-sm', [
-            text("© copyright 2023. All Rights Reserved."),
+            text("© copyright 2026. All Rights Reserved."),
           ]),
         ]),
       ]),
@@ -73,8 +80,13 @@ class Footer extends StatelessComponent {
 
   // Helper for Social Icons
   Component _socialIcon(String icon, String url) {
-    return a(href: url, classes: 'w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center hover:bg-[#006837] group transition-all', [
-      img(src: icon, classes: 'w-5 h-5 group-hover:invert', alt: 'social'),
-    ]);
+    return a(
+      href: url,
+      classes:
+          'w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center hover:bg-[#006837] group transition-all',
+      [
+        img(src: icon, classes: 'w-5 h-5 group-hover:invert', alt: 'social'),
+      ],
+    );
   }
 }

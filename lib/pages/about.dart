@@ -6,57 +6,98 @@ class About extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return section(id: 'about-section', classes: 'w-full bg-white py-16 scroll-mt-20', [
+    return section(id: 'about-section', classes: 'w-full bg-slate-50 py-20 scroll-mt-20', [
       div(classes: 'max-w-7xl mx-auto px-6', [
-        // FLEX CONTAINER FOR TEXT AND IMAGE
-        div(classes: 'flex flex-col md:flex-row gap-10 items-start mb-12', [
-          // LEFT SIDE: TEXT CONTENT
-          div(classes: 'w-full md:w-1/2', [
-            h2(classes: 'text-3xl md:text-4xl font-bold text-[#262262] mb-6', [
+        // --- TOP SECTION: HISTORY ---
+        div(classes: 'flex flex-col lg:flex-row gap-12 items-center mb-20', [
+          // TEXT
+          div(classes: 'w-full lg:w-1/2', [
+            h2(classes: 'text-2xl md:text-3xl font-extrabold text-[#262262] mb-8 relative', [
               text("Brief History"),
+              span(classes: 'absolute -bottom-2 left-0 w-20 h-1 bg-[#1E73BE]', []),
             ]),
-            p(classes: 'text-gray-600 leading-relaxed text-justify mb-4', [
+            p(classes: ' text-gray-600 leading-snug text-base text-justify mb-6', [
               text(
-                "The PIA Employees Cooperative Housing Society was registered under cooperative societies act 1925 registered by the Registrar Cooperative Societies Punjab vide 'registration certificate' No. 942 dated 08-09-1979 for the establishment of a Cooperative Housing Society. 1791 kanals 09 Marlas for Phase-I and 380 kanals 05 Marlas for its Phase-II. Was purchased in Niaz Baig Ad Satto Katla Revenue estate. Accordingly, LDA gave approval of both phases vide their letters No. CMP/53S/LDA/135 (Phase-I) and CMP/105-S/LDA/137 (Phase-II) both dated 10-10-1982.",
-              ),
-            ]),
-            p(classes: 'text-gray-600 leading-relaxed text-justify', [
-              text(
-                "The Society comprises of Nine (9) Blocks, Seven (7) in Phase-I (A, B, C, D, E, F & G) while two (2) Blocks in Phase-II (A1 & B1). The Society is situated at a very prime location of city near Township, WAPDA Town, Revenue Society, Punjab Govt Society, Iqbal Avenue and Johar Town etc.",
+                "The Shamsi Mercantile Co-operative Housing Society Ltd. was registered under the Co-operative Societies Act, 1925 with the Registrar Co-operative Societies in the year 2003 for the establishment and development of a cooperative housing scheme for its members. The society was formed with the objective of providing residential plots and organized infrastructure based on cooperative principles. The scheme comprises planned residential development designed to ensure a secure and well-managed community environment for its members. The layout plan and development of the society are carried out in accordance with the rules and regulations of the concerned authorities. The society aims to promote welfare, mutual cooperation, and orderly residential development for its members under the cooperative housing system.",
               ),
             ]),
           ]),
 
-          // RIGHT SIDE: IMAGE
-          div(classes: 'w-full md:w-1/2 shadow-xl rounded-lg overflow-hidden', [
-            img(
-              src: 'images/slide2.jpg', // Apni image ka sahi path dein
-              alt: 'Society Map',
-              classes: 'w-full h-full object-cover shadow-lg',
+          // IMAGE
+          div(classes: 'w-full lg:w-1/2 group', [
+            div(
+              classes:
+                  'relative overflow-hidden rounded-2xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]',
+              [
+                img(
+                  src: 'images/slide2.jpg',
+                  alt: 'Society Map',
+                  classes: 'w-full h-64 md:h-80 lg:h-80 object-cover',
+                ),
+                div(classes: 'absolute inset-0 bg-gradient-to-t from-[#262262]/40 to-transparent', []),
+              ],
             ),
           ]),
         ]),
 
-        // TABLE SECTION
-        div(classes: 'w-full overflow-hidden rounded-lg border border-gray-200 shadow-sm', [
-          // Table Header
-          div(classes: 'bg-[#1E73BE] text-white p-4 font-bold text-lg', [
-            text("Residential Plots in both Phases"),
+        // --- RESIDENTIAL PLOTS SECTION ---
+        div(classes: 'mb-12', [
+          div(classes: 'flex items-center justify-between mb-8 border-l-8 border-[#1E73BE] pl-6', [
+            div([
+              h3(classes: 'text-2xl font-bold text-[#262262]', [text("Residential Plots")]),
+              p(classes: 'text-gray-500', [text("Planned housing units for a modern lifestyle")]),
+            ]),
+            div(classes: 'bg-[#1E73BE] text-white px-6 py-2 rounded-full font-bold shadow-md', [
+              text("Total: 1510 Plots"),
+            ]),
           ]),
 
-          // Table Row 1
-          div(classes: 'flex justify-between border-b border-gray-100 p-4 bg-white', [
-            span(classes: 'text-gray-700 font-medium', [text("01 Kanal")]),
-            span(classes: 'text-gray-900 font-bold', [text("936 Plots")]),
+          // Grid for Residential Plots
+          div(classes: 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4', [
+            ..._buildPlotCards(["R-120", "A-240", "A-280", "A-300", "B-360", "D-720"], "Sq. Yards", "border-[#1E73BE]"),
+          ]),
+        ]),
+
+        // --- COMMERCIAL PLOTS SECTION ---
+        div(classes: 'mb-8', [
+          div(classes: 'flex items-center justify-between mb-8 border-l-8 border-[#262262] pl-6', [
+            div([
+              h3(classes: 'text-2xl font-bold text-[#262262]', [text("Commercial Plots")]),
+              p(classes: 'text-gray-500', [text("Prime locations for business growth")]),
+            ]),
+            div(classes: 'bg-[#262262] text-white px-6 py-2 rounded-full font-bold shadow-md', [
+              text("Total: 268 Plots"),
+            ]),
           ]),
 
-          // Table Row 2
-          div(classes: 'flex justify-between p-4 bg-gray-50', [
-            span(classes: 'text-gray-700 font-medium', [text("10 Marla")]),
-            span(classes: 'text-gray-900 font-bold', [text("1150 Plots")]), // Example data
+          // Grid for Commercial Plots
+          div(classes: 'grid grid-cols-2 md:grid-cols-4 gap-4', [
+            ..._buildPlotCards(
+              ["CM-100", "SB-Type 278", "SB-Type 400", "Petrol Pump 1920"],
+              "Sq. Yards",
+              "border-[#262262]",
+            ),
           ]),
         ]),
       ]),
     ]);
+  }
+
+  // Helper function to build consistent cards
+  List<Component> _buildPlotCards(List<String> sizes, String unit, String borderColor) {
+    return sizes
+        .map(
+          (size) => div(
+            classes:
+                'bg-white p-6 rounded-xl border-b-4 $borderColor shadow-sm hover:shadow-md transition-shadow text-center group',
+            [
+              span(classes: 'block text-xl font-bold text-gray-800 group-hover:text-[#1E73BE] transition-colors', [
+                text(size),
+              ]),
+              span(classes: 'text-sm text-gray-500 uppercase tracking-wider font-medium', [text(unit)]),
+            ],
+          ),
+        )
+        .toList();
   }
 }

@@ -19,7 +19,7 @@ class Features extends StatelessComponent {
           _featureCard(
             icon: 'images/icon-accessibility.svg', // Apne icons ka path dein
             title: 'Accessibility',
-            description: 'PIA Employees Cooperative Housing Society Limited Near WAPDA Town Goal Chaker, Lahore.',
+            description: 'Shamsi Mercantile Co-operative Housing Society Gadap Town, District Jamshoro.',
           ),
 
           // CARD 2: Security
@@ -27,7 +27,7 @@ class Features extends StatelessComponent {
             icon: 'images/icon-security.svg',
             title: 'Security',
             description:
-                'We have recruited skilled enforcers to take care of security because, for us, our cherished residents\' safety is our top priority.',
+                'The society plans to ensure proper security arrangements through trained security personnel, as the safety of future residents will remain a top priority.',
           ),
 
           // CARD 3: Facilities
@@ -35,7 +35,7 @@ class Features extends StatelessComponent {
             icon: 'images/icon-facilities.svg',
             title: 'Facilities',
             description:
-                'We have installed numerous parks and constructed a dedicated zoo for elders and kids alike to enjoy their leisure time.',
+                'The society plans to develop parks and recreational areas where elders and children will be able to enjoy their leisure time in a pleasant environment.',
           ),
         ]),
       ]),
