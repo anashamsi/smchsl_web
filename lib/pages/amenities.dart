@@ -29,31 +29,31 @@ class Amenities extends StatelessComponent {
             classes: 'flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory no-scrollbar scroll-smooth',
             [
               _amenityCard(
-                image: 'images/school.png',
+                image: 'images/school.webp',
                 title: 'Schools',
                 desc:
                     'The society plans to establish primary and secondary schools for boys and girls, ensuring quality education within the community.',
               ),
               _amenityCard(
-                image: 'images/mosque.png',
+                image: 'images/mosque.webp',
                 title: 'Mosques',
                 desc:
                     'Plans include serene mosques for residents, providing peaceful spaces for prayers and fostering a harmonious community.',
               ),
               _amenityCard(
-                image: 'images/hospital.png',
+                image: 'images/hospital.webp',
                 title: 'Hospital',
                 desc:
                     'A healthcare facility is planned to provide basic medical services and emergency care for future residents.',
               ),
               _amenityCard(
-                image: 'images/sportscomplex.png',
+                image: 'images/sportscomplex.webp',
                 title: 'Sports Complex',
                 desc:
                     'The society intends to develop a sports complex for recreational and fitness activities for all age groups.',
               ),
               _amenityCard(
-                image: 'images/parks.png',
+                image: 'images/parks.webp',
                 title: 'Parks & Playgrounds',
                 desc:
                     'Parks and playgrounds are planned to offer outdoor leisure and play areas for children, elders, and families alike.',

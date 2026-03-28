@@ -34,22 +34,22 @@ class Gallery extends StatelessComponent {
             classes: 'flex gap-5 overflow-x-auto pb-8 snap-x no-scrollbar scroll-smooth',
             [
               _galleryCard(
-                image: 'images/registrationcertificate.jpg',
+                image: 'images/registrationcertificate.webp',
                 tag: 'Certificate',
                 title: 'Society Registration',
               ),
               _galleryCard(
-                image: 'images/fbrcertificate.jpg',
+                image: 'images/fbrcertificate.webp',
                 tag: 'Certificate',
                 title: 'FBR Certificate',
               ),
               _galleryCard(
-                image: 'images/trademark.jpg',
+                image: 'images/trademark.webp',
                 tag: 'Certificate',
                 title: 'Trademark Certificate',
               ),
               _galleryCard(
-                image: 'images/copyrights.jpg',
+                image: 'images/copyrights.webp',
                 tag: 'Certificate',
                 title: 'Certificate of Copyrights',
               ),

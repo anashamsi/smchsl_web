@@ -16,7 +16,7 @@ class About extends StatelessComponent {
               text("Brief History"),
               span(classes: 'absolute -bottom-2 left-0 w-20 h-1 bg-[#F6921C]', []),
             ]),
-            p(classes: ' text-gray-600 leading-snug text-base text-justify mb-6', [
+            p(classes: 'text-gray-600 leading-relaxed text-sm md:text-base md:text-justify mb-6', [
               text(
                 "The Shamsi Mercantile Co-operative Housing Society Ltd. was registered under the Co-operative Societies Act, 1925 with the Registrar Co-operative Societies in the year 2003 for the establishment and development of a cooperative housing scheme for its members. The society was formed with the objective of providing residential plots and organized infrastructure based on cooperative principles. The scheme comprises planned residential development designed to ensure a secure and well-managed community environment for its members. The layout plan and development of the society are carried out in accordance with the rules and regulations of the concerned authorities. The society aims to promote welfare, mutual cooperation, and orderly residential development for its members under the cooperative housing system.",
               ),
@@ -24,17 +24,22 @@ class About extends StatelessComponent {
           ]),
 
           // IMAGE
+          // IMAGE
           div(classes: 'w-full lg:w-1/2 group', [
             div(
               classes:
-                  'relative overflow-hidden rounded-2xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]',
+                  'relative overflow-hidden rounded-2xl shadow-xl transition-transform duration-500 group-hover:scale-[1.02] bg-gray-100',
               [
                 img(
-                  src: 'images/slide2.jpg',
+                  src: 'images/slide2.webp',
                   alt: 'Society Map',
-                  classes: 'w-full h-64 md:h-80 lg:h-80 object-cover',
+                  // Mobile par aspect-video aur h-auto rakha hai taake box ke andar fit rahe
+                  classes: 'w-full h-auto aspect-video md:h-80 lg:h-80 object-cover block',
                 ),
-                div(classes: 'absolute inset-0 bg-gradient-to-t from-[#262262]/40 to-transparent', []),
+                div(
+                  classes: 'absolute inset-0 bg-gradient-to-t from-[#262262]/20 to-transparent pointer-events-none',
+                  [],
+                ),
               ],
             ),
           ]),
@@ -47,9 +52,13 @@ class About extends StatelessComponent {
               h3(classes: 'text-2xl font-bold text-[#262262]', [text("Residential Plots")]),
               p(classes: 'text-gray-500', [text("Planned housing units for a modern lifestyle")]),
             ]),
-            div(classes: 'bg-[#1E73BE] text-white px-6 py-2 rounded-full font-bold shadow-md', [
-              text("Total: 1510 Plots"),
-            ]),
+            div(
+              classes:
+                  'bg-[#1E73BE] text-white px-3 py-1 md:px-6 md:py-2 rounded-full font-bold shadow-md text-xs md:text-base whitespace-nowrap',
+              [
+                text("Total: 1510 Plots"),
+              ],
+            ),
           ]),
 
           // Grid for Residential Plots
@@ -65,9 +74,13 @@ class About extends StatelessComponent {
               h3(classes: 'text-2xl font-bold text-[#262262]', [text("Commercial Plots")]),
               p(classes: 'text-gray-500', [text("Prime locations for business growth")]),
             ]),
-            div(classes: 'bg-[#262262] text-white px-6 py-2 rounded-full font-bold shadow-md', [
-              text("Total: 268 Plots"),
-            ]),
+            div(
+              classes:
+                  'bg-[#262262] text-white px-3 py-1 md:px-6 md:py-2 rounded-full font-bold shadow-md text-xs md:text-base whitespace-nowrap',
+              [
+                text("Total: 268 Plots"),
+              ],
+            ),
           ]),
 
           // Grid for Commercial Plots

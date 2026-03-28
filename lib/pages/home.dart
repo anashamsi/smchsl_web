@@ -21,14 +21,14 @@ class HomeState extends State<Home> {
         div(classes: 'absolute inset-0 w-full h-full', [
           div(classes: 'hidden md:block w-full h-full', [
             img(
-              src: "images/slide1.png",
+              src: "images/slide1.webp",
               alt: "Shamsi Mercantile",
               classes: 'w-full h-full object-fill',
             ),
           ]),
           div(classes: 'block md:hidden w-full h-full', [
             img(
-              src: "images/slide3.png",
+              src: "images/slide3.webp",
               alt: "Shamsi Mercantile",
               classes: 'w-full h-full object-fill',
             ),
@@ -37,19 +37,26 @@ class HomeState extends State<Home> {
         ]),
 
         div(classes: 'relative z-10 flex flex-col items-center justify-center h-full text-center px-6', [
-          h1(classes: 'text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg', [
+          // Heading ka margin mobile par zero hai (mb-0), desktop par md:mb-2
+          h2(classes: 'text-4xl md:text-6xl font-bold text-white mb-0 md:mb-2 drop-shadow-lg', [
             Component.text("Shamsi Mercantile"),
           ]),
-          p(classes: 'text-lg md:text-2xl text-white mb-6 drop-shadow-lg', [
+
+          // mt-2 se shamsi mercantile se thora niche kiya,
+          // aur mb-12 se mobile par niche wali line ko kafi gap diya (desktop par md:mb-6 hi rahega)
+          p(classes: 'text-base md:text-2xl text-white mt-2 mb-12 md:mb-6 leading-tight drop-shadow-lg', [
             Component.text("Co-operative Housing Society Ltd."),
           ]),
-          p(classes: 'text-lg md:text-xl text-gray-200 mb-8 max-w-2xl', [
-            Component.text("SMCHSL has top location as it is surrounded by all moden amenities"),
+
+          p(classes: 'text-sm md:text-xl text-gray-200 mb-1 md:mb-8 max-w-2xl', [
+            Component.text("SMCHSL has top location as it is surrounded by all modern amenities"),
           ]),
+
           div(classes: 'flex gap-4', [
             a(
               href: "https://play.google.com/store/apps/details?id=com.hannanashraf12345.smchslappmobile",
-              classes: 'bg-[#F6921C] hover:bg-[#262261] text-white font-semibold py-3 px-8 rounded-lg transition-all',
+              classes:
+                  'bg-[#F6921C] hover:bg-[#262261] text-white font-semibold py-3 px-8 md:py-3 md:px-8 rounded-lg transition-all text-sm md:text-base',
               [Component.text("Download our Mobile App")],
             ),
           ]),
