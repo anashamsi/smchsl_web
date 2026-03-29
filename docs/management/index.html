@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/smchsl_web/"/>
+    <meta charset="utf-8"/>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto);
+      html, body {
+        width: 100%;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+      h1 {
+        margin: unset;
+        font-size: 4rem;
+      }
+    </style>
+    <link href="manifest.json" rel="manifest"/>
+    <link href="styles.css" rel="stylesheet"/>
+    <script async src="flutter_bootstrap.js"></script>
+    <!--$-->
+    <title>Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--/-->
+    <script src="main.client.dart.js" defer></script>
+    <style>
+      .main {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="min-h-screen flex flex-col bg-white">
+      <!--@header-->
+      <div>
+        <header class="w-full bg-white shadow fixed top-0 left-0 z-50">
+          <div class="relative max-w-7xl mx-auto flex items-center justify-between px-5 py-5 min-h-[80px]">
+            <div class="flex items-center gap-4">
+              <div class="absolute left-5 top-1/2 transform -translate-y-1/2 md:hidden"><a href="/"><img class="w-15" src="images/logo.svg"/></a></div>
+              <button class="absolute right-5 top-1/2 transform -translate-y-1/2 md:hidden text-3xl cursor-pointer">☰</button>
+              <a href="/"><img class="hidden md:block w-50 h-15" src="images/logo2.svg"/></a>
+            </div>
+            <nav class="hidden md:flex gap-6 font-medium text-black">
+              <a href="/"><span class="hover:text-[#F7941E]">Home</span></a>
+              <a href="/#about-section"><span class="hover:text-[#F7941E]">About Us</span></a>
+              <a href="/management"><span class="text-[#F7941E] font-bold">Management</span></a>
+              <a href="/#features-section"><span class="hover:text-[#F7941E]">Features</span></a>
+              <a href="/#gallery-section"><span class="hover:text-[#F7941E]">Gallery</span></a>
+              <a href="/#amenities-section"><span class="hover:text-[#F7941E]">Amenities</span></a>
+              <a href="/#footer-section"><span class="hover:text-[#F7941E]">Contact</span></a>
+            </nav>
+            <a class="bg-[#262261] hover:bg-[#F6921C] text-white  py-2 px-6 rounded-lg transition-all hidden md:block" href="#footer-section">Contact us</a>
+          </div>
+        </header>
+        <div class="fixed top-0 left-0 w-full bg-white shadow-lg z-50 transform -translate-y-full transition-transform duration-300">
+          <div class="p-6 flex justify-between items-center border-b">Menu<button class="text-2xl">✕</button></div>
+          <div class="flex flex-col gap-5 p-6">
+            <a href="/"><span class="text-gray-700 hover:text-[#F7941E]">Home</span></a>
+            <a href="/#about-section"><span class="text-gray-700 hover:text-[#F7941E]">About Us</span></a>
+            <a href="/management"><span class="text-[#F7941E] font-bold">Management</span></a>
+            <a href="/#features-section"><span class="text-gray-700 hover:text-[#F7941E]">Features</span></a>
+            <a href="/#gallery-section"><span class="text-gray-700 hover:text-[#F7941E]">Gallery</span></a>
+            <a href="/#amenities-section"><span class="text-gray-700 hover:text-[#F7941E]">Amenities</span></a>
+            <a href="/#footer-section"><span class="text-gray-700 hover:text-[#F7941E]">Contact</span></a>
+          </div>
+        </div>
+      </div>
+      <!--/@header-->
+      <main class="flex-1">
+        <!--@management-->
+        <section id="management-section" class="w-full bg-white pt-32 pb-16">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden mb-16">
+              <img class="w-full h-full object-fill" alt="Management Banner" src="images/slide1.png"/>
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><h1 class="text-4xl md:text-6xl font-bold text-white">Management</h1></div>
+            </div>
+            <div class="text-center max-w-4xl mx-auto mb-16"><h2 class="text-3xl font-bold text-[#F6921C] mb-6 uppercase tracking-wide">Our Team</h2></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+              <div class="flex flex-col items-center p-6 bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition-shadow duration-300">
+                <div class="w-20 h-35  rounded-lg overflow-hidden mb-6   p-2">
+                  <img class="w-full h-full object-contain opacity-80 group-hover:opacity-100  " alt="Naveed Ahmed Shakeel Shamsi" src="images/profile.svg"/>
+                </div>
+                <h3 class="text-xl font-bold text-[#262261] mb-1 text-center">Naveed Ahmed Shakeel Shamsi</h3>
+                <p class="text-[#F7941E] font-semibold text-sm uppercase tracking-tighter">President</p>
+                <div class="w-12 h-1 bg-gray-200 mt-4 rounded-full"></div>
+              </div>
+              <div class="flex flex-col items-center p-6 bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition-shadow duration-300">
+                <div class="w-20 h-35  rounded-lg overflow-hidden mb-6   p-2">
+                  <img class="w-full h-full object-contain opacity-80 group-hover:opacity-100  " alt="Badar ud Din Alwajih" src="images/profile.svg"/>
+                </div>
+                <h3 class="text-xl font-bold text-[#262261] mb-1 text-center">Badar ud Din Alwajih</h3>
+                <p class="text-[#F7941E] font-semibold text-sm uppercase tracking-tighter">Vice President</p>
+                <div class="w-12 h-1 bg-gray-200 mt-4 rounded-full"></div>
+              </div>
+              <div class="flex flex-col items-center p-6 bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition-shadow duration-300">
+                <div class="w-20 h-35  rounded-lg overflow-hidden mb-6   p-2">
+                  <img class="w-full h-full object-contain opacity-80 group-hover:opacity-100  " alt="Kamran Mateen Batla" src="images/profile.svg"/>
+                </div>
+                <h3 class="text-xl font-bold text-[#262261] mb-1 text-center">Kamran Mateen Batla</h3>
+                <p class="text-[#F7941E] font-semibold text-sm uppercase tracking-tighter">Hon. General Secretary</p>
+                <div class="w-12 h-1 bg-gray-200 mt-4 rounded-full"></div>
+              </div>
+              <div class="flex flex-col items-center p-6 bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition-shadow duration-300">
+                <div class="w-20 h-35  rounded-lg overflow-hidden mb-6   p-2">
+                  <img class="w-full h-full object-contain opacity-80 group-hover:opacity-100  " alt="Abdul Rehamn" src="images/profile.svg"/>
+                </div>
+                <h3 class="text-xl font-bold text-[#262261] mb-1 text-center">Abdul Rehamn</h3>
+                <p class="text-[#F7941E] font-semibold text-sm uppercase tracking-tighter">Joint Secretary</p>
+                <div class="w-12 h-1 bg-gray-200 mt-4 rounded-full"></div>
+              </div>
+              <div class="flex flex-col items-center p-6 bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition-shadow duration-300">
+                <div class="w-20 h-35  rounded-lg overflow-hidden mb-6   p-2">
+                  <img class="w-full h-full object-contain opacity-80 group-hover:opacity-100  " alt="Ehtisham Shamsi" src="images/profile.svg"/>
+                </div>
+                <h3 class="text-xl font-bold text-[#262261] mb-1 text-center">Ehtisham Shamsi</h3>
+                <p class="text-[#F7941E] font-semibold text-sm uppercase tracking-tighter">Treasurer</p>
+                <div class="w-12 h-1 bg-gray-200 mt-4 rounded-full"></div>
+              </div>
+              <div class="flex flex-col items-center p-6 bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition-shadow duration-300">
+                <div class="w-20 h-35  rounded-lg overflow-hidden mb-6   p-2">
+                  <img class="w-full h-full object-contain opacity-80 group-hover:opacity-100  " alt="Naveed Ahmed Shakeel Shamsi" src="images/profile.svg"/>
+                </div>
+                <h3 class="text-xl font-bold text-[#262261] mb-1 text-center">Naveed Ahmed Shakeel Shamsi</h3>
+                <p class="text-[#F7941E] font-semibold text-sm uppercase tracking-tighter">Member</p>
+                <div class="w-12 h-1 bg-gray-200 mt-4 rounded-full"></div>
+              </div>
+              <div class="flex flex-col items-center p-6 bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition-shadow duration-300">
+                <div class="w-20 h-35  rounded-lg overflow-hidden mb-6   p-2">
+                  <img class="w-full h-full object-contain opacity-80 group-hover:opacity-100  " alt="Naveed Ahmed Shakeel Shamsi" src="images/profile.svg"/>
+                </div>
+                <h3 class="text-xl font-bold text-[#262261] mb-1 text-center">Naveed Ahmed Shakeel Shamsi</h3>
+                <p class="text-[#F7941E] font-semibold text-sm uppercase tracking-tighter">Member</p>
+                <div class="w-12 h-1 bg-gray-200 mt-4 rounded-full"></div>
+              </div>
+              <div class="flex flex-col items-center p-6 bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition-shadow duration-300">
+                <div class="w-20 h-35  rounded-lg overflow-hidden mb-6   p-2">
+                  <img class="w-full h-full object-contain opacity-80 group-hover:opacity-100  " alt="Naveed Ahmed Shakeel Shamsi" src="images/profile.svg"/>
+                </div>
+                <h3 class="text-xl font-bold text-[#262261] mb-1 text-center">Naveed Ahmed Shakeel Shamsi</h3>
+                <p class="text-[#F7941E] font-semibold text-sm uppercase tracking-tighter">Member</p>
+                <div class="w-12 h-1 bg-gray-200 mt-4 rounded-full"></div>
+              </div>
+              <div class="flex flex-col items-center p-6 bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition-shadow duration-300">
+                <div class="w-20 h-35  rounded-lg overflow-hidden mb-6   p-2">
+                  <img class="w-full h-full object-contain opacity-80 group-hover:opacity-100  " alt="Naveed Ahmed Shakeel Shamsi" src="images/profile.svg"/>
+                </div>
+                <h3 class="text-xl font-bold text-[#262261] mb-1 text-center">Naveed Ahmed Shakeel Shamsi</h3>
+                <p class="text-[#F7941E] font-semibold text-sm uppercase tracking-tighter">Member</p>
+                <div class="w-12 h-1 bg-gray-200 mt-4 rounded-full"></div>
+              </div>
+              <div class="flex flex-col items-center p-6 bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition-shadow duration-300">
+                <div class="w-20 h-35  rounded-lg overflow-hidden mb-6   p-2">
+                  <img class="w-full h-full object-contain opacity-80 group-hover:opacity-100  " alt="Naveed Ahmed Shakeel Shamsi" src="images/profile.svg"/>
+                </div>
+                <h3 class="text-xl font-bold text-[#262261] mb-1 text-center">Naveed Ahmed Shakeel Shamsi</h3>
+                <p class="text-[#F7941E] font-semibold text-sm uppercase tracking-tighter">Member</p>
+                <div class="w-12 h-1 bg-gray-200 mt-4 rounded-full"></div>
+              </div>
+              <div class="flex flex-col items-center p-6 bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition-shadow duration-300">
+                <div class="w-20 h-35  rounded-lg overflow-hidden mb-6   p-2">
+                  <img class="w-full h-full object-contain opacity-80 group-hover:opacity-100  " alt="Naveed Ahmed Shakeel Shamsi" src="images/profile.svg"/>
+                </div>
+                <h3 class="text-xl font-bold text-[#262261] mb-1 text-center">Naveed Ahmed Shakeel Shamsi</h3>
+                <p class="text-[#F7941E] font-semibold text-sm uppercase tracking-tighter">Member</p>
+                <div class="w-12 h-1 bg-gray-200 mt-4 rounded-full"></div>
+              </div>
+              <div class="flex flex-col items-center p-6 bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition-shadow duration-300">
+                <div class="w-20 h-35  rounded-lg overflow-hidden mb-6   p-2">
+                  <img class="w-full h-full object-contain opacity-80 group-hover:opacity-100  " alt="Naveed Ahmed Shakeel Shamsi" src="images/profile.svg"/>
+                </div>
+                <h3 class="text-xl font-bold text-[#262261] mb-1 text-center">Naveed Ahmed Shakeel Shamsi</h3>
+                <p class="text-[#F7941E] font-semibold text-sm uppercase tracking-tighter">Member</p>
+                <div class="w-12 h-1 bg-gray-200 mt-4 rounded-full"></div>
+              </div>
+              <div class="flex flex-col items-center p-6 bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition-shadow duration-300">
+                <div class="w-20 h-35  rounded-lg overflow-hidden mb-6   p-2">
+                  <img class="w-full h-full object-contain opacity-80 group-hover:opacity-100  " alt="Naveed Ahmed Shakeel Shamsi" src="images/profile.svg"/>
+                </div>
+                <h3 class="text-xl font-bold text-[#262261] mb-1 text-center">Naveed Ahmed Shakeel Shamsi</h3>
+                <p class="text-[#F7941E] font-semibold text-sm uppercase tracking-tighter">Member</p>
+                <div class="w-12 h-1 bg-gray-200 mt-4 rounded-full"></div>
+              </div>
+              <div class="flex flex-col items-center p-6 bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition-shadow duration-300">
+                <div class="w-20 h-35  rounded-lg overflow-hidden mb-6   p-2">
+                  <img class="w-full h-full object-contain opacity-80 group-hover:opacity-100  " alt="Naveed Ahmed Shakeel Shamsi" src="images/profile.svg"/>
+                </div>
+                <h3 class="text-xl font-bold text-[#262261] mb-1 text-center">Naveed Ahmed Shakeel Shamsi</h3>
+                <p class="text-[#F7941E] font-semibold text-sm uppercase tracking-tighter">Member</p>
+                <div class="w-12 h-1 bg-gray-200 mt-4 rounded-full"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--/@management-->
+      </main>
+      <footer id="footer-section" class="w-full bg-white pt-16 pb-8 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+            <div>
+              <h2 class="text-2xl font-bold text-[#F6921C] mb-6">SMCHSL</h2>
+              <p class="text-gray-500 mb-6 leading-relaxed">
+                Become a part of Shamsi Mercantile Co-operative Housing Society and experience organized living, community harmony, and a promising future.
+              </p>
+              <h3 class="text-lg font-bold text-[#F6921C] mb-4">Important Links</h3>
+              <ul class="space-y-2">
+                <li>
+                  <a class="text-gray-400 hover:text-[#006837] transition-colors text-sm" href="/management">Management</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-[#006837] transition-colors text-sm" href="/#features-section">Features</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-[#F6921C] mb-6">Contact Us</h3>
+              <div class="space-y-4">
+                <div class="flex items-start gap-3">
+                  <img class="w-5 h-5 mt-1 opacity-80" alt src="images/email.svg"/>
+                  <p class="text-gray-500 text-sm flex-1 leading-snug">shamsimercantilechsl@gmail.com</p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <img class="w-5 h-5 mt-1 opacity-80" alt src="images/location.svg"/>
+                  <p class="text-gray-500 text-sm flex-1 leading-snug">Office # 02, Ruby Heights, Jamal ud Din Afghani Road, Sharfabad, Karachi, Pakistan.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <img class="w-5 h-5 mt-1 opacity-80" alt src="images/whatsapp.svg"/>
+                  <p class="text-gray-500 text-sm flex-1 leading-snug">+92 333 1351353</p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <img class="w-5 h-5 mt-1 opacity-80" alt src="images/phone.svg"/>
+                  <p class="text-gray-500 text-sm flex-1 leading-snug">021-34917503</p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <img class="w-5 h-5 mt-1 opacity-80" alt src="images/phone.svg"/>
+                  <p class="text-gray-500 text-sm flex-1 leading-snug">021-34537503</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-[#F6921C] mb-6">Connect With Us</h3>
+              <div class="flex gap-4">
+                <a class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center hover:bg-[#fbc689] group transition-all" href="https://www.facebook.com/ShamsiMercantileCooperativeHousingSocietyLtd/"><img class="w-5 h-5 group-hover:text-white" alt="social" src="images/facebook.svg"/></a>
+                <a class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center hover:bg-[#fbc689] group transition-all" href="https://play.google.com/store/apps/details?id=com.hannanashraf12345.smchslappmobile"><img class="w-5 h-5 group-hover:text-white" alt="social" src="images/playstore.svg"/></a>
+              </div>
+            </div>
+          </div>
+          <div class="pt-8 border-t border-gray-100 text-center"><p class="text-gray-400 text-sm">© copyright 2026. All Rights Reserved.</p></div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

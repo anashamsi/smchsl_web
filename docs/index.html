@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/smchsl_web/"/>
+    <meta charset="utf-8"/>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto);
+      html, body {
+        width: 100%;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+      h1 {
+        margin: unset;
+        font-size: 4rem;
+      }
+    </style>
+    <link href="manifest.json" rel="manifest"/>
+    <link href="styles.css" rel="stylesheet"/>
+    <script async src="flutter_bootstrap.js"></script>
+    <!--$-->
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--/-->
+    <script src="main.client.dart.js" defer></script>
+    <style>
+      .main {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="min-h-screen flex flex-col bg-white">
+      <!--@header-->
+      <div>
+        <header class="w-full bg-white shadow fixed top-0 left-0 z-50">
+          <div class="relative max-w-7xl mx-auto flex items-center justify-between px-5 py-5 min-h-[80px]">
+            <div class="flex items-center gap-4">
+              <div class="absolute left-5 top-1/2 transform -translate-y-1/2 md:hidden"><a href="/"><img class="w-15" src="images/logo.svg"/></a></div>
+              <button class="absolute right-5 top-1/2 transform -translate-y-1/2 md:hidden text-3xl cursor-pointer">☰</button>
+              <a href="/"><img class="hidden md:block w-50 h-15" src="images/logo2.svg"/></a>
+            </div>
+            <nav class="hidden md:flex gap-6 font-medium text-black">
+              <a href="/"><span class="text-[#F7941E] font-bold">Home</span></a>
+              <a href="/#about-section"><span class="hover:text-[#F7941E]">About Us</span></a>
+              <a href="/management"><span class="hover:text-[#F7941E]">Management</span></a>
+              <a href="/#features-section"><span class="hover:text-[#F7941E]">Features</span></a>
+              <a href="/#gallery-section"><span class="hover:text-[#F7941E]">Gallery</span></a>
+              <a href="/#amenities-section"><span class="hover:text-[#F7941E]">Amenities</span></a>
+              <a href="/#footer-section"><span class="hover:text-[#F7941E]">Contact</span></a>
+            </nav>
+            <a class="bg-[#262261] hover:bg-[#F6921C] text-white  py-2 px-6 rounded-lg transition-all hidden md:block" href="#footer-section">Contact us</a>
+          </div>
+        </header>
+        <div class="fixed top-0 left-0 w-full bg-white shadow-lg z-50 transform -translate-y-full transition-transform duration-300">
+          <div class="p-6 flex justify-between items-center border-b">Menu<button class="text-2xl">✕</button></div>
+          <div class="flex flex-col gap-5 p-6">
+            <a href="/"><span class="text-[#F7941E] font-bold">Home</span></a>
+            <a href="/#about-section"><span class="text-gray-700 hover:text-[#F7941E]">About Us</span></a>
+            <a href="/management"><span class="text-gray-700 hover:text-[#F7941E]">Management</span></a>
+            <a href="/#features-section"><span class="text-gray-700 hover:text-[#F7941E]">Features</span></a>
+            <a href="/#gallery-section"><span class="text-gray-700 hover:text-[#F7941E]">Gallery</span></a>
+            <a href="/#amenities-section"><span class="text-gray-700 hover:text-[#F7941E]">Amenities</span></a>
+            <a href="/#footer-section"><span class="text-gray-700 hover:text-[#F7941E]">Contact</span></a>
+          </div>
+        </div>
+      </div>
+      <!--/@header-->
+      <main class="flex-1">
+        <!--@home-->
+        <div class="w-full flex flex-col">
+          <section class="relative w-full h-[520px] md:h-[650px] overflow-hidden bg-gray-900">
+            <div class="absolute inset-0 w-full h-full">
+              <div class="hidden md:block w-full h-full"><img class="w-full h-full object-fill" alt="Shamsi Mercantile" src="images/slide1.webp"/></div>
+              <div class="block md:hidden w-full h-full"><img class="w-full h-full object-fill" alt="Shamsi Mercantile" src="images/slide3.webp"/></div>
+              <div class="absolute inset-0 bg-black/40"></div>
+            </div>
+            <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
+              <h2 class="text-4xl md:text-6xl font-bold text-white mb-0 md:mb-2 drop-shadow-lg">Shamsi Mercantile</h2>
+              <p class="text-base md:text-2xl text-white mt-2 mb-12 md:mb-6 leading-tight drop-shadow-lg">Co-operative Housing Society Ltd.</p>
+              <p class="text-sm md:text-xl text-gray-200 mb-1 md:mb-8 max-w-2xl">SMCHSL has top location as it is surrounded by all modern amenities</p>
+              <div class="flex gap-4">
+                <a class="bg-[#F6921C] hover:bg-[#262261] text-white font-semibold py-3 px-8 md:py-3 md:px-8 rounded-lg transition-all text-sm md:text-base" href="https://play.google.com/store/apps/details?id=com.hannanashraf12345.smchslappmobile">Download our Mobile App</a>
+              </div>
+            </div>
+          </section>
+          <div id="about-section">
+            <section id="about-section" class="w-full bg-slate-50 py-20 scroll-mt-20">
+              <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col lg:flex-row gap-12 items-center mb-20">
+                  <div class="w-full lg:w-1/2">
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-[#262261] mb-8 relative">Brief History<span class="absolute -bottom-2 left-0 w-20 h-1 bg-[#F6921C]"></span></h2>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base md:text-justify mb-6">
+                      The Shamsi Mercantile Co-operative Housing Society Ltd. was registered under the Co-operative Societies Act, 1925 with the Registrar Co-operative Societies in the year 2003 for the establishment and development of a cooperative housing scheme for its members. The society was formed with the objective of providing residential plots and organized infrastructure based on cooperative principles. The scheme comprises planned residential development designed to ensure a secure and well-managed community environment for its members. The layout plan and development of the society are carried out in accordance with the rules and regulations of the concerned authorities. The society aims to promote welfare, mutual cooperation, and orderly residential development for its members under the cooperative housing system.
+                    </p>
+                  </div>
+                  <div class="w-full lg:w-1/2 group">
+                    <div class="relative overflow-hidden rounded-2xl shadow-xl transition-transform duration-500 group-hover:scale-[1.02] bg-gray-100">
+                      <img class="w-full h-auto aspect-video md:h-80 lg:h-80 object-cover block" alt="Society Map" src="images/slide2.webp"/>
+                      <div class="absolute inset-0 bg-gradient-to-t from-[#262262]/20 to-transparent pointer-events-none"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-12">
+                  <div class="flex items-center justify-between mb-8 border-l-8 border-[#F6921C] pl-6">
+                    <div>
+                      <h3 class="text-2xl font-bold text-[#262262]">Residential Plots</h3>
+                      <p class="text-gray-500">Planned housing units for a modern lifestyle</p>
+                    </div>
+                    <div class="bg-[#1E73BE] text-white px-3 py-1 md:px-6 md:py-2 rounded-full font-bold shadow-md text-xs md:text-base whitespace-nowrap">Total: 1510 Plots</div>
+                  </div>
+                  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <div class="bg-white p-6 rounded-xl border-b-4 border-[#1E73BE] shadow-sm hover:shadow-md transition-shadow text-center group">
+                      <span class="block text-xl font-bold text-gray-800 group-hover:text-[#1E73BE] transition-colors">R-120</span>
+                      <span class="text-sm text-gray-500 uppercase tracking-wider font-medium">Sq. Yards</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border-b-4 border-[#1E73BE] shadow-sm hover:shadow-md transition-shadow text-center group">
+                      <span class="block text-xl font-bold text-gray-800 group-hover:text-[#1E73BE] transition-colors">A-240</span>
+                      <span class="text-sm text-gray-500 uppercase tracking-wider font-medium">Sq. Yards</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border-b-4 border-[#1E73BE] shadow-sm hover:shadow-md transition-shadow text-center group">
+                      <span class="block text-xl font-bold text-gray-800 group-hover:text-[#1E73BE] transition-colors">A-280</span>
+                      <span class="text-sm text-gray-500 uppercase tracking-wider font-medium">Sq. Yards</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border-b-4 border-[#1E73BE] shadow-sm hover:shadow-md transition-shadow text-center group">
+                      <span class="block text-xl font-bold text-gray-800 group-hover:text-[#1E73BE] transition-colors">A-300</span>
+                      <span class="text-sm text-gray-500 uppercase tracking-wider font-medium">Sq. Yards</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border-b-4 border-[#1E73BE] shadow-sm hover:shadow-md transition-shadow text-center group">
+                      <span class="block text-xl font-bold text-gray-800 group-hover:text-[#1E73BE] transition-colors">B-360</span>
+                      <span class="text-sm text-gray-500 uppercase tracking-wider font-medium">Sq. Yards</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border-b-4 border-[#1E73BE] shadow-sm hover:shadow-md transition-shadow text-center group">
+                      <span class="block text-xl font-bold text-gray-800 group-hover:text-[#1E73BE] transition-colors">D-720</span>
+                      <span class="text-sm text-gray-500 uppercase tracking-wider font-medium">Sq. Yards</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-8">
+                  <div class="flex items-center justify-between mb-8 border-l-8 border-[#262261] pl-6">
+                    <div>
+                      <h3 class="text-2xl font-bold text-[#262262]">Commercial Plots</h3>
+                      <p class="text-gray-500">Prime locations for business growth</p>
+                    </div>
+                    <div class="bg-[#262262] text-white px-3 py-1 md:px-6 md:py-2 rounded-full font-bold shadow-md text-xs md:text-base whitespace-nowrap">Total: 268 Plots</div>
+                  </div>
+                  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-white p-6 rounded-xl border-b-4 border-[#262262] shadow-sm hover:shadow-md transition-shadow text-center group">
+                      <span class="block text-xl font-bold text-gray-800 group-hover:text-[#1E73BE] transition-colors">CM-100</span>
+                      <span class="text-sm text-gray-500 uppercase tracking-wider font-medium">Sq. Yards</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border-b-4 border-[#262262] shadow-sm hover:shadow-md transition-shadow text-center group">
+                      <span class="block text-xl font-bold text-gray-800 group-hover:text-[#1E73BE] transition-colors">SB-Type 278</span>
+                      <span class="text-sm text-gray-500 uppercase tracking-wider font-medium">Sq. Yards</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border-b-4 border-[#262262] shadow-sm hover:shadow-md transition-shadow text-center group">
+                      <span class="block text-xl font-bold text-gray-800 group-hover:text-[#1E73BE] transition-colors">SB-Type 400</span>
+                      <span class="text-sm text-gray-500 uppercase tracking-wider font-medium">Sq. Yards</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border-b-4 border-[#262262] shadow-sm hover:shadow-md transition-shadow text-center group">
+                      <span class="block text-xl font-bold text-gray-800 group-hover:text-[#1E73BE] transition-colors">Petrol Pump 1920</span>
+                      <span class="text-sm text-gray-500 uppercase tracking-wider font-medium">Sq. Yards</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div id="features-section">
+            <section id="features-section" class="w-full bg-white py-16 scroll-mt-20">
+              <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-4xl font-bold text-[#1a2b4b] text-center mb-16">Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.05)] flex flex-col items-start text-left">
+                    <div class="bg-[#F6921C] p-4 rounded-xl mb-6"><img class="w-8 h-8 invert" alt="Accessibility" src="images/accessibility.svg"/></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Accessibility</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm md:text-base">Shamsi Mercantile Co-operative Housing Society Gadap Town, District Jamshoro.</p>
+                  </div>
+                  <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.05)] flex flex-col items-start text-left">
+                    <div class="bg-[#F6921C] p-4 rounded-xl mb-6"><img class="w-8 h-8 invert" alt="Security" src="images/security.svg"/></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Security</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm md:text-base">
+                      The society plans to ensure proper security arrangements through trained security personnel, as the safety of future residents will remain a top priority.
+                    </p>
+                  </div>
+                  <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.05)] flex flex-col items-start text-left">
+                    <div class="bg-[#F6921C] p-4 rounded-xl mb-6"><img class="w-8 h-8 invert" alt="Facilities" src="images/facility.svg"/></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Facilities</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm md:text-base">
+                      The society plans to develop parks and recreational areas where elders and children will be able to enjoy their leisure time in a pleasant environment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div id="amenities-section">
+            <section id="amenities-section" class="w-full bg-[#f8fafc] py-16 scroll-mt-20">
+              <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-4xl font-bold text-[#262261] text-center mb-12">Amenities</h2>
+                <div class="relative px-4">
+                  <button class="absolute left-[-10px] md:left-[-20px] top-1/2 -translate-y-1/2 z-30 bg-[#F6921C] hover:bg-[#262261] text-white p-3 rounded-full shadow-xl transition-all cursor-pointer hidden md:block" onclick="document.getElementById('scroll-container').scrollBy({left: -380, behavior: 'smooth'})">&lt;</button>
+                  <div id="scroll-container" class="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory no-scrollbar scroll-smooth">
+                    <div class="min-w-[85%] md:min-w-[360px] bg-white rounded-2xl overflow-hidden shadow-md snap-center border border-gray-100">
+                      <div class="h-60 w-full"><img class="w-full h-full object-cover" alt="Schools" src="images/school.webp"/></div>
+                      <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#262261] mb-3">Schools</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                          The society plans to establish primary and secondary schools for boys and girls, ensuring quality education within the community.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="min-w-[85%] md:min-w-[360px] bg-white rounded-2xl overflow-hidden shadow-md snap-center border border-gray-100">
+                      <div class="h-60 w-full"><img class="w-full h-full object-cover" alt="Mosques" src="images/mosque.webp"/></div>
+                      <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#262261] mb-3">Mosques</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                          Plans include serene mosques for residents, providing peaceful spaces for prayers and fostering a harmonious community.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="min-w-[85%] md:min-w-[360px] bg-white rounded-2xl overflow-hidden shadow-md snap-center border border-gray-100">
+                      <div class="h-60 w-full"><img class="w-full h-full object-cover" alt="Hospital" src="images/hospital.webp"/></div>
+                      <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#262261] mb-3">Hospital</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                          A healthcare facility is planned to provide basic medical services and emergency care for future residents.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="min-w-[85%] md:min-w-[360px] bg-white rounded-2xl overflow-hidden shadow-md snap-center border border-gray-100">
+                      <div class="h-60 w-full"><img class="w-full h-full object-cover" alt="Sports Complex" src="images/sportscomplex.webp"/></div>
+                      <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#262261] mb-3">Sports Complex</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                          The society intends to develop a sports complex for recreational and fitness activities for all age groups.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="min-w-[85%] md:min-w-[360px] bg-white rounded-2xl overflow-hidden shadow-md snap-center border border-gray-100">
+                      <div class="h-60 w-full"><img class="w-full h-full object-cover" alt="Parks &amp; Playgrounds" src="images/parks.webp"/></div>
+                      <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#262261] mb-3">Parks &amp; Playgrounds</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                          Parks and playgrounds are planned to offer outdoor leisure and play areas for children, elders, and families alike.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="absolute right-[-10px] md:right-[-20px] top-1/2 -translate-y-1/2 z-30 bg-[#F6921C] hover:bg-[#262261] text-white p-3 rounded-full shadow-xl transition-all cursor-pointer hidden md:block" onclick="document.getElementById('scroll-container').scrollBy({left: 380, behavior: 'smooth'})">&gt;</button>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div id="gallery-section">
+            <section id="gallery-section" class="w-full bg-[#f9fafb] py-16 scroll-mt-20">
+              <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-12">
+                  <h2 class="text-4xl font-bold text-[#262261] mb-4">Society Updates</h2>
+                  <p class="text-gray-500 max-w-xl mx-auto">Explore official society documents, registrations, trademarks, and latest alerts for members.</p>
+                </div>
+                <div class="relative">
+                  <button class="absolute left-[-10px] top-1/2 -translate-y-1/2 z-30 bg-white/90 hover:bg-[#F7941E] hover:text-white text-gray-800 p-3 rounded-full shadow-lg transition-all hidden md:block border border-gray-100 cursor-pointer" onclick="document.getElementById('gallery-container').scrollBy({left: -320, behavior: 'smooth'})">←</button>
+                  <div id="gallery-container" class="flex gap-5 overflow-x-auto pb-8 snap-x no-scrollbar scroll-smooth">
+                    <div class="min-w-[260px] md:min-w-[300px] aspect-[2/3] relative rounded-xl overflow-hidden shadow-md snap-start group bg-gray-100">
+                      <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Certificate" src="images/registrationcertificate.webp"/>
+                      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
+                      <div class="absolute bottom-4 left-4">
+                        <span class="bg-[#F7941E] text-white text-[10px] uppercase tracking-widest px-2 py-1 rounded mb-2 inline-block">Certificate</span>
+                        <h3 class="text-white font-medium text-lg">Society Registration</h3>
+                      </div>
+                    </div>
+                    <div class="min-w-[260px] md:min-w-[300px] aspect-[2/3] relative rounded-xl overflow-hidden shadow-md snap-start group bg-gray-100">
+                      <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Certificate" src="images/fbrcertificate.webp"/>
+                      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
+                      <div class="absolute bottom-4 left-4">
+                        <span class="bg-[#F7941E] text-white text-[10px] uppercase tracking-widest px-2 py-1 rounded mb-2 inline-block">Certificate</span>
+                        <h3 class="text-white font-medium text-lg">FBR Certificate</h3>
+                      </div>
+                    </div>
+                    <div class="min-w-[260px] md:min-w-[300px] aspect-[2/3] relative rounded-xl overflow-hidden shadow-md snap-start group bg-gray-100">
+                      <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Certificate" src="images/trademark.webp"/>
+                      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
+                      <div class="absolute bottom-4 left-4">
+                        <span class="bg-[#F7941E] text-white text-[10px] uppercase tracking-widest px-2 py-1 rounded mb-2 inline-block">Certificate</span>
+                        <h3 class="text-white font-medium text-lg">Trademark Certificate</h3>
+                      </div>
+                    </div>
+                    <div class="min-w-[260px] md:min-w-[300px] aspect-[2/3] relative rounded-xl overflow-hidden shadow-md snap-start group bg-gray-100">
+                      <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Certificate" src="images/copyrights.webp"/>
+                      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
+                      <div class="absolute bottom-4 left-4">
+                        <span class="bg-[#F7941E] text-white text-[10px] uppercase tracking-widest px-2 py-1 rounded mb-2 inline-block">Certificate</span>
+                        <h3 class="text-white font-medium text-lg">Certificate of Copyrights</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="absolute right-[-10px] top-1/2 -translate-y-1/2 z-30 bg-white/90 hover:bg-[#F7941E] hover:text-white text-gray-800 p-3 rounded-full shadow-lg transition-all hidden md:block border border-gray-100 cursor-pointer" onclick="document.getElementById('gallery-container').scrollBy({left: 320, behavior: 'smooth'})">→</button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <!--/@home-->
+      </main>
+      <footer id="footer-section" class="w-full bg-white pt-16 pb-8 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+            <div>
+              <h2 class="text-2xl font-bold text-[#F6921C] mb-6">SMCHSL</h2>
+              <p class="text-gray-500 mb-6 leading-relaxed">
+                Become a part of Shamsi Mercantile Co-operative Housing Society and experience organized living, community harmony, and a promising future.
+              </p>
+              <h3 class="text-lg font-bold text-[#F6921C] mb-4">Important Links</h3>
+              <ul class="space-y-2">
+                <li>
+                  <a class="text-gray-400 hover:text-[#006837] transition-colors text-sm" href="/management">Management</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-[#006837] transition-colors text-sm" href="/#features-section">Features</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-[#F6921C] mb-6">Contact Us</h3>
+              <div class="space-y-4">
+                <div class="flex items-start gap-3">
+                  <img class="w-5 h-5 mt-1 opacity-80" alt src="images/email.svg"/>
+                  <p class="text-gray-500 text-sm flex-1 leading-snug">shamsimercantilechsl@gmail.com</p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <img class="w-5 h-5 mt-1 opacity-80" alt src="images/location.svg"/>
+                  <p class="text-gray-500 text-sm flex-1 leading-snug">Office # 02, Ruby Heights, Jamal ud Din Afghani Road, Sharfabad, Karachi, Pakistan.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <img class="w-5 h-5 mt-1 opacity-80" alt src="images/whatsapp.svg"/>
+                  <p class="text-gray-500 text-sm flex-1 leading-snug">+92 333 1351353</p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <img class="w-5 h-5 mt-1 opacity-80" alt src="images/phone.svg"/>
+                  <p class="text-gray-500 text-sm flex-1 leading-snug">021-34917503</p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <img class="w-5 h-5 mt-1 opacity-80" alt src="images/phone.svg"/>
+                  <p class="text-gray-500 text-sm flex-1 leading-snug">021-34537503</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-[#F6921C] mb-6">Connect With Us</h3>
+              <div class="flex gap-4">
+                <a class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center hover:bg-[#fbc689] group transition-all" href="https://www.facebook.com/ShamsiMercantileCooperativeHousingSocietyLtd/"><img class="w-5 h-5 group-hover:text-white" alt="social" src="images/facebook.svg"/></a>
+                <a class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center hover:bg-[#fbc689] group transition-all" href="https://play.google.com/store/apps/details?id=com.hannanashraf12345.smchslappmobile"><img class="w-5 h-5 group-hover:text-white" alt="social" src="images/playstore.svg"/></a>
+              </div>
+            </div>
+          </div>
+          <div class="pt-8 border-t border-gray-100 text-center"><p class="text-gray-400 text-sm">© copyright 2026. All Rights Reserved.</p></div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
